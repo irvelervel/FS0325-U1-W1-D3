@@ -1,4 +1,5 @@
 main p {
+  /* i <p> dentro <main> */
   /* trucchetto per centrare un elemento dentro un contenitore :) */
   width: 50%;
   margin-left: auto;
@@ -8,4 +9,59 @@ main p {
 
 body {
   background-color: #f0f0f0;
+}
+
+/* il carattere . mi permette di selezionare degli elementi grazie alla loro classe */
+.giusto {
+  font-weight: bold;
+}
+
+/* QUIZ */
+
+.dog-title {
+  color: purple;
+}
+
+h4 {
+  color: red;
+}
+
+h4 {
+  /* vince green perchè a parità di specificità vince l'ultima regola applicata */
+  color: green;
+}
+
+/* anche con le classi vige la regola che in caso di stessa specificità vince l'ultima! */
+/* .test {
+  color: lightsalmon;
+} */
+
+/* il selettore di ID ha specifità 100, ma può essere utilizzato una volta con quel nome */
+/* è un IDENTIFICATORE UNIVOCO */
+#terzo {
+  background-color: aquamarine;
+}
+
+/* genericamente: */
+/* id > class > tag */
+
+/* attenzione a non confondere questi due selettori: */
+li .giusto {
+  /* gli elementi con class="giusto" figli degli <li> */
+  /* <li> */
+  /*   <p class="giusto"> */
+}
+
+li.giusto {
+  /* li dotati della class="giusto" */
+  /* <li class="giusto"> */
+}
+
+nav li {
+  /* prenderebbe tutti e 3 i link della navbar */
+}
+
+nav > li {
+  /* non trova niente! perchè dentro nav non esistono direttamente degli li */
+  display: none;
 }
