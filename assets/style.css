@@ -1,0 +1,11 @@
+main p {
+  /* trucchetto per centrare un elemento dentro un contenitore :) */
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
+body {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Basics</title>
+    <!-- approccio 2 incorporato -->
+    <!-- va contro il D R Y -> Don't Repeat Yourself -->
+    <style>
+      a {
+        font-size: 0.8em;
+        text-decoration: none;
+        color: black;
+      }
+      /* i commenti in CSS si fanno così */
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      header li {
+        text-align: center;
+        /* questo selettore seleziona tutti gli <li> figli di header */
+      }
+
+      h1,
+      h3 {
+        /* questo selettore seleziona SIA tutti gli <h1> SIA tutti gli <h3> */
+        letter-spacing: 3px;
+      }
+    </style>
+    <!-- approccio 3 esterno -->
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- approccio 1 inline -->
+      <h1 style="text-align: center; color: red">Fondamenti di CSS</h1>
+      <nav>
+        <ul>
+          <li><a href="https://epicode.com">EPICODE</a></li>
+          <li><a href="https://developer.mozilla.org">MDN</a></li>
+          <li><a href="#">BOH</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h3>Scopriamo come applicare le regole CSS al nostro documento</h3>
+        <ol>
+          <li>CSS INLINE</li>
+          <li>CSS INCORPORATO</li>
+          <li>CSS ESTERNO</li>
+        </ol>
+      </section>
+      <section>
+        <p>Qui invece inserirò solamente dei paragrafi con dei lorem ipsum</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+          explicabo esse unde iusto alias est eveniet tempore at nobis expedita
+          animi, quo aliquid deserunt, eum repellendus obcaecati magni debitis
+          itaque.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio
+          quibusdam velit qui alias? Repudiandae sit vel voluptatem eveniet quod
+          quasi repellat distinctio, eius illo, dolorum totam necessitatibus
+          quae molestiae corporis?Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Ipsam animi ipsum officia sapiente dolores eaque?
+          Quidem earum, quaerat explicabo modi consequatur vitae perspiciatis ad
+          illo dignissimos eius ex quae laboriosam.
+        </p>
+      </section>
+      <section>
+        <h4>CAGNOLINI!</h4>
+        <img src="https://placedog.net/400" width="300px" />
+      </section>
+    </main>
+    <footer>
+      <p>Stefano Casasola - EPICODE</p>
+    </footer>
+  </body>
+</html>
